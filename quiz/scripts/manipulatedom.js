@@ -21,6 +21,7 @@ function createTxtNode(txt) {
   return txtNode;
 }
 
+// TO DO STILL: See git stashed version of out-of-date main 
 function addTable() {
   const tableNode = document.createElement("table");
   for(let i = 0; i < 3; i++) {

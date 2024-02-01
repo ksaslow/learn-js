@@ -9,8 +9,12 @@ const originalArray = [
   const newArray = originalArray.map((item) => {
     // Creating a new object with the same properties
     // return { id: item.id, name: item.name.toUpperCase(), age: item.age };
+    
+    // SEE THE SPREAD SYNTAX: (syntax)
     // spread syntax creates a shallow copy
-    return { ...item, name: item.name.toUpperCase() };
+    // return { ...item, name: item.name.toUpperCase() }; // WE MUST ALWAYS return from a map!
+
+    return { id: item.id, name: item.name.toUpperCase(), age: item.age }
   });
   
   // Displaying the original and new arrays

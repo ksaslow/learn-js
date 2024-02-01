@@ -12,10 +12,10 @@ window.onload = function() {
       if (inp.value !== '') {
               // empty the list so that we don't display duplicate entries
               // the display is regenerated every time a search term is entered.
-              list.innerHTML = '';
+              list.innerHTML = ''; // TRY A PUSH AND A SHIFT    
 
               // loop through the sorted array, and display all the search terms in the list
-              for (const itemText of myHistoryCopy) {
+              for (const itemText of myHistoryCopy) {   // SORT THE LIST
                 
               }
 
