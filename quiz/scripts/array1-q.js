@@ -10,7 +10,7 @@ window.onload = function() {
     btn.onclick = () => {
     // we will only allow a term to be entered if the search input isn't empty
       if (inp.value !== '') {
-              myHistory.unshift(inp.value);
+              myHistory.unshift(inp.value); // (done KS)
 
               // empty the list so that we don't display duplicate entries
               // the display is regenerated every time a search term is entered.
@@ -25,12 +25,12 @@ window.onload = function() {
               for (const itemText of myHistoryCopy) {   // SORT THE LIST
                 const listItem = document.createElement('li');
                 listItem.textContent = itemText;
-                list.appendChild(listItem);
+                list.appendChild(listItem); // (done KS)
               }
 
               // If the array length is 5 or more, remove the oldest search term
               if (myHistory.length >= MAX_HISTORY) {
-                myHistory.pop();
+                myHistory.pop(); // (done KS)
               }
 
               // empty the search input and focus it, ready for the next term to be entered
