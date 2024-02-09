@@ -1,7 +1,7 @@
 // main.js
 
 // Importing add and multiply functions from mathOperations module
-import { add, multiply } from './math.js';
+import { add, multiply } from './math.js'; // see math.js for the exported statements
 
 // Using the imported functions
 console.log(add(5, 3)); // Output: 8

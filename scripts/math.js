@@ -10,3 +10,5 @@ export function multiply(a, b) {
 return a * b;
 }
   
+// OR: export { add, multiply } then remove the export keywords above.
+// Note: you can only have ONE "export default" per file. 
